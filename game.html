@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top Up Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1 id="gameTitle">Top Up</h1>
+</header>
+
+<main class="form-container">
+  <form id="topupForm">
+    <label for="userId">User ID:</label>
+    <input type="text" id="userId" placeholder="Masukkan ID Kamu" required>
+
+    <label for="server">Server (opsional):</label>
+    <input type="text" id="server" placeholder="Contoh: 1234">
+
+    <label for="nominal">Pilih Nominal:</label>
+    <select id="nominal" required>
+      <option value="">-- Pilih --</option>
+      <option value="86 Diamond - Rp 20.000">86 Diamond - Rp 20.000</option>
+      <option value="172 Diamond - Rp 40.000">172 Diamond - Rp 40.000</option>
+      <option value="257 Diamond - Rp 60.000">257 Diamond - Rp 60.000</option>
+    </select>
+
+    <label for="metode">Metode Pembayaran:</label>
+    <select id="metode" required>
+      <option value="">-- Pilih --</option>
+      <option value="Dana">Dana</option>
+      <option value="OVO">OVO</option>
+      <option value="Gopay">Gopay</option>
+      <option value="QRIS">QRIS</option>
+    </select>
+
+    <button type="submit" class="btn">Bayar Sekarang</button>
+  </form>
+
+  <div id="result" style="display:none" class="result-box"></div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
